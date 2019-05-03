@@ -27,7 +27,7 @@ float4 main(VertexToPixel input) : SV_TARGET
 	//Fixed 5-point guassian blur - vertical
 
 	float4 totalColor = Pixels.Sample(Sampler, input.uv);
-	float blurAmount = 5;
+	float blurAmount = 2;
 	int numSamples = 1;
 	float2 uv;
 
